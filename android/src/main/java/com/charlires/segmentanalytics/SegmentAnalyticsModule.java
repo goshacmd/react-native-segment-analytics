@@ -50,6 +50,11 @@ public class SegmentAnalyticsModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void reset() {
+        Analytics.with(this.getReactApplicationContext()).reset();
+    }
+
+    @ReactMethod
     public void track(String trackText, ReadableMap properties) {
 
         Analytics.with(this.getReactApplicationContext()).track(
