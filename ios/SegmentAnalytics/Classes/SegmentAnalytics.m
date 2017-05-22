@@ -3,7 +3,7 @@
 //
 
 #import "SegmentAnalytics.h"
-#import "RCTConvert.h"
+#import <React/RCTConvert.h>
 #import <Analytics/SEGAnalytics.h>
 #import <Foundation/Foundation.h>
 
